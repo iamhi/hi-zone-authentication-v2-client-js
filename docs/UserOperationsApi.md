@@ -71,10 +71,6 @@ Login using username and passowrd
 
 ```javascript
 import HiZoneAuthenticationV2Api from 'hi_zone_authentication_v2_api';
-let defaultClient = HiZoneAuthenticationV2Api.ApiClient.instance;
-// Configure Bearer access token for authorization: hi-zone-authentication-v2
-let hi-zone-authentication-v2 = defaultClient.authentications['hi-zone-authentication-v2'];
-hi-zone-authentication-v2.accessToken = "YOUR ACCESS TOKEN"
 
 let apiInstance = new HiZoneAuthenticationV2Api.UserOperationsApi();
 let userLoginRequest = new HiZoneAuthenticationV2Api.UserLoginRequest(); // UserLoginRequest | 
@@ -100,7 +96,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[hi-zone-authentication-v2](../README.md#hi-zone-authentication-v2)
+No authorization required
 
 ### HTTP request headers
 
@@ -120,10 +116,6 @@ Register with username, password and email
 
 ```javascript
 import HiZoneAuthenticationV2Api from 'hi_zone_authentication_v2_api';
-let defaultClient = HiZoneAuthenticationV2Api.ApiClient.instance;
-// Configure Bearer access token for authorization: hi-zone-authentication-v2
-let hi-zone-authentication-v2 = defaultClient.authentications['hi-zone-authentication-v2'];
-hi-zone-authentication-v2.accessToken = "YOUR ACCESS TOKEN"
 
 let apiInstance = new HiZoneAuthenticationV2Api.UserOperationsApi();
 let userRegisterRequest = new HiZoneAuthenticationV2Api.UserRegisterRequest(); // UserRegisterRequest | 
@@ -149,7 +141,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[hi-zone-authentication-v2](../README.md#hi-zone-authentication-v2)
+No authorization required
 
 ### HTTP request headers
 

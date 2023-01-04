@@ -1,6 +1,5 @@
 .babelrc
 .gitignore
-.openapi-generator-ignore
 .travis.yml
 README.md
 docs/AddRoleRequest.md
@@ -36,17 +35,3 @@ src/model/UserLoginRequest.js
 src/model/UserLoginResponse.js
 src/model/UserRegisterRequest.js
 src/model/UserRegisterResponse.js
-test/api/TokenOperationsApi.spec.js
-test/api/UserOperationsApi.spec.js
-test/api/WhatIsATagApi.spec.js
-test/model/AddRoleRequest.spec.js
-test/model/AddRoleResponse.spec.js
-test/model/DecodeTokenRequest.spec.js
-test/model/DecodeTokenResponse.spec.js
-test/model/InvalidateTokensRequest.spec.js
-test/model/RefreshTokensRequest.spec.js
-test/model/RefreshTokensResponse.spec.js
-test/model/UserLoginRequest.spec.js
-test/model/UserLoginResponse.spec.js
-test/model/UserRegisterRequest.spec.js
-test/model/UserRegisterResponse.spec.js

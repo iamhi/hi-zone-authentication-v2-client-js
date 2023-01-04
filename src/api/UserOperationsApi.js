@@ -110,7 +110,7 @@ export default class UserOperationsApi {
       let formParams = {
       };
 
-      let authNames = ['hi-zone-authentication-v2'];
+      let authNames = [];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
       let returnType = UserLoginResponse;
@@ -151,7 +151,7 @@ export default class UserOperationsApi {
       let formParams = {
       };
 
-      let authNames = ['hi-zone-authentication-v2'];
+      let authNames = [];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
       let returnType = UserRegisterResponse;
