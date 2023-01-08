@@ -18,6 +18,7 @@ import AddRoleResponse from './model/AddRoleResponse';
 import DecodeTokenRequest from './model/DecodeTokenRequest';
 import DecodeTokenResponse from './model/DecodeTokenResponse';
 import InvalidateTokensRequest from './model/InvalidateTokensRequest';
+import MeTokenResponse from './model/MeTokenResponse';
 import RefreshTokensRequest from './model/RefreshTokensRequest';
 import RefreshTokensResponse from './model/RefreshTokensResponse';
 import UserLoginRequest from './model/UserLoginRequest';
@@ -96,6 +97,12 @@ export {
      * @property {module:model/InvalidateTokensRequest}
      */
     InvalidateTokensRequest,
+
+    /**
+     * The MeTokenResponse model constructor.
+     * @property {module:model/MeTokenResponse}
+     */
+    MeTokenResponse,
 
     /**
      * The RefreshTokensRequest model constructor.

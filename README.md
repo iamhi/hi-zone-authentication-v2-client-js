@@ -126,6 +126,7 @@ Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *HiZoneAuthenticationV2Api.TokenOperationsApi* | [**decode**](docs/TokenOperationsApi.md#decode) | **POST** /token/decode | 
 *HiZoneAuthenticationV2Api.TokenOperationsApi* | [**invalidate**](docs/TokenOperationsApi.md#invalidate) | **POST** /token/invalidate | 
+*HiZoneAuthenticationV2Api.TokenOperationsApi* | [**me**](docs/TokenOperationsApi.md#me) | **POST** /token/me | 
 *HiZoneAuthenticationV2Api.TokenOperationsApi* | [**refreshTokens**](docs/TokenOperationsApi.md#refreshTokens) | **POST** /token/refresh | 
 *HiZoneAuthenticationV2Api.UserOperationsApi* | [**addRole**](docs/UserOperationsApi.md#addRole) | **POST** /user/role | 
 *HiZoneAuthenticationV2Api.UserOperationsApi* | [**login**](docs/UserOperationsApi.md#login) | **POST** /user/login | 
@@ -140,6 +141,7 @@ Class | Method | HTTP request | Description
  - [HiZoneAuthenticationV2Api.DecodeTokenRequest](docs/DecodeTokenRequest.md)
  - [HiZoneAuthenticationV2Api.DecodeTokenResponse](docs/DecodeTokenResponse.md)
  - [HiZoneAuthenticationV2Api.InvalidateTokensRequest](docs/InvalidateTokensRequest.md)
+ - [HiZoneAuthenticationV2Api.MeTokenResponse](docs/MeTokenResponse.md)
  - [HiZoneAuthenticationV2Api.RefreshTokensRequest](docs/RefreshTokensRequest.md)
  - [HiZoneAuthenticationV2Api.RefreshTokensResponse](docs/RefreshTokensResponse.md)
  - [HiZoneAuthenticationV2Api.UserLoginRequest](docs/UserLoginRequest.md)

@@ -16,6 +16,7 @@ import ApiClient from "../ApiClient";
 import DecodeTokenRequest from '../model/DecodeTokenRequest';
 import DecodeTokenResponse from '../model/DecodeTokenResponse';
 import InvalidateTokensRequest from '../model/InvalidateTokensRequest';
+import MeTokenResponse from '../model/MeTokenResponse';
 import RefreshTokensRequest from '../model/RefreshTokensRequest';
 import RefreshTokensResponse from '../model/RefreshTokensResponse';
 
@@ -121,6 +122,42 @@ export default class TokenOperationsApi {
     }
 
     /**
+     * Callback function to receive the result of the me operation.
+     * @callback module:api/TokenOperationsApi~meCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/MeTokenResponse} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * Get user details from cookie access token
+     * @param {module:api/TokenOperationsApi~meCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/MeTokenResponse}
+     */
+    me(callback) {
+      let postBody = null;
+
+      let pathParams = {
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['hi-zone-authentication-v2'];
+      let contentTypes = [];
+      let accepts = ['application/json'];
+      let returnType = MeTokenResponse;
+      return this.apiClient.callApi(
+        '/token/me', 'POST',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
      * Callback function to receive the result of the refreshTokens operation.
      * @callback module:api/TokenOperationsApi~refreshTokensCallback
      * @param {String} error Error message, if any.
@@ -130,16 +167,14 @@ export default class TokenOperationsApi {
 
     /**
      * Get new access token with refresh token
-     * @param {module:model/RefreshTokensRequest} refreshTokensRequest 
+     * @param {Object} opts Optional parameters
+     * @param {module:model/RefreshTokensRequest} opts.refreshTokensRequest 
      * @param {module:api/TokenOperationsApi~refreshTokensCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/RefreshTokensResponse}
      */
-    refreshTokens(refreshTokensRequest, callback) {
-      let postBody = refreshTokensRequest;
-      // verify the required parameter 'refreshTokensRequest' is set
-      if (refreshTokensRequest === undefined || refreshTokensRequest === null) {
-        throw new Error("Missing the required parameter 'refreshTokensRequest' when calling refreshTokens");
-      }
+    refreshTokens(opts, callback) {
+      opts = opts || {};
+      let postBody = opts['refreshTokensRequest'];
 
       let pathParams = {
       };

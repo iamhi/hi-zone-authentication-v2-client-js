@@ -23,11 +23,10 @@ class RefreshTokensRequest {
      * Constructs a new <code>RefreshTokensRequest</code>.
      * A request for new access token with refresh token
      * @alias module:model/RefreshTokensRequest
-     * @param refreshToken {String} 
      */
-    constructor(refreshToken) { 
+    constructor() { 
         
-        RefreshTokensRequest.initialize(this, refreshToken);
+        RefreshTokensRequest.initialize(this);
     }
 
     /**
@@ -35,8 +34,7 @@ class RefreshTokensRequest {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, refreshToken) { 
-        obj['refreshToken'] = refreshToken;
+    static initialize(obj) { 
     }
 
     /**
@@ -63,12 +61,6 @@ class RefreshTokensRequest {
      * @return {boolean} to indicate whether the JSON data is valid with respect to <code>RefreshTokensRequest</code>.
      */
     static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of RefreshTokensRequest.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
         // ensure the json data is a string
         if (data['refreshToken'] && !(typeof data['refreshToken'] === 'string' || data['refreshToken'] instanceof String)) {
             throw new Error("Expected the field `refreshToken` to be a primitive type in the JSON string but got " + data['refreshToken']);
@@ -80,7 +72,7 @@ class RefreshTokensRequest {
 
 }
 
-RefreshTokensRequest.RequiredProperties = ["refreshToken"];
+
 
 /**
  * @member {String} refreshToken

@@ -7,6 +7,7 @@ docs/AddRoleResponse.md
 docs/DecodeTokenRequest.md
 docs/DecodeTokenResponse.md
 docs/InvalidateTokensRequest.md
+docs/MeTokenResponse.md
 docs/RefreshTokensRequest.md
 docs/RefreshTokensResponse.md
 docs/TokenOperationsApi.md
@@ -29,9 +30,11 @@ src/model/AddRoleResponse.js
 src/model/DecodeTokenRequest.js
 src/model/DecodeTokenResponse.js
 src/model/InvalidateTokensRequest.js
+src/model/MeTokenResponse.js
 src/model/RefreshTokensRequest.js
 src/model/RefreshTokensResponse.js
 src/model/UserLoginRequest.js
 src/model/UserLoginResponse.js
 src/model/UserRegisterRequest.js
 src/model/UserRegisterResponse.js
+test/model/MeTokenResponse.spec.js

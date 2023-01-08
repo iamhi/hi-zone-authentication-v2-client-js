@@ -4,6 +4,6 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**refreshToken** | **String** |  | 
+**refreshToken** | **String** |  | [optional] 
 
 
